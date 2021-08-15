@@ -20,7 +20,7 @@ class Login(object):
         return True
 
     def login(self):
-        self.pageLogin()
+        # self.pageLogin()
         self.doLogin()
 
 
