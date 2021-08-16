@@ -11,8 +11,14 @@ class AutomacaoLead(object):
         # rdlogin = RDLogin(http)
         # rdlogin.login()
 
-        pplogin = PipeLogin(http)
-        pplogin.login()
+        dados = {
+            "nome": "Jose Pinto Coelho",
+            "email": "cesarpamplonafiho@gmail.com",
+            "telefone": "4878451221"
+        }
+        pplogin = PipeLogin(http, dados)
+        pplogin.delete()
+        # pplogin.saveAndDelete()
 
 
 
